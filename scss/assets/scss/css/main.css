@@ -1,0 +1,125 @@
+/* Abstracts */
+/* Colors */
+/* Font */
+/* Breakpoints */
+/* Base */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: var(--color-blay-100, #050e18);
+  font-family: var(--font-family, "Poppins");
+  color: var(--color-frost-200, #a5afb8);
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: var(--line-height-heading, 1.2);
+}
+
+h1,
+.h1 {
+  font-size: var(--font-size-h1, clamp(3.051875rem, 2.7305592105rem + 1.6065789474vw, 3.815rem));
+}
+
+h2,
+.h2 {
+  font-size: var(--font-size-h2, clamp(2.44125rem, 2.1841447368rem + 1.2855263158vw, 3.051875rem));
+}
+
+h3,
+.h3 {
+  font-size: var(--font-size-h3, clamp(1.953125rem, 1.7475986842rem + 1.0276315789vw, 2.44125rem));
+}
+
+h4,
+.h4 {
+  font-size: var(--font-size-h4, 1.953rem);
+}
+
+h5,
+.h5 {
+  font-size: var(--font-size-h5, 1.563rem);
+}
+
+h6,
+.h6 {
+  font-size: var(--font-size-h6, 1.25rem);
+}
+
+small {
+  font-size: var(--font-size-small, 0.8rem);
+}
+
+p,
+li {
+  line-height: var(--line-height, 1.5);
+}
+
+/* Components */
+/* Layout */
+/* Vendor *//*# sourceMappingURL=main.css.map */

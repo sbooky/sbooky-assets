@@ -1,0 +1,21 @@
+@function range($min, $max) {
+	$viewport_min: 320;
+	$viewport_max: 1080;
+	$pixels_per_rem: 16;
+
+	$min_width: $viewport_min / $pixels_per_rem;
+	$max_width: $viewport_max / $pixels_per_rem;
+
+	$max_rem: $max / $pixels_per_rem;
+	$min_rem: $min / $pixels_per_rem;
+
+	$slope: ($max_rem - $min_rem) / ($max_width - $min_width);
+
+	$y_axis_intersection: -$min_width * $slope + $min_rem;
+
+	@return clamp(
+		#{$min_rem}rem,
+		calc(#{$y_axis_intersection}rem + #{$slope * 100vw}),
+		#{$max_rem}rem
+	);
+}
