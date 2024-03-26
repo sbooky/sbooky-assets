@@ -1,4 +1,4 @@
-/* Colors */
+/* colors */
 $color_blay_100: var(--color-blay-100, #050e18);
 $color_blay_200: var(--color-blay-200, #111a24);
 $color_blay_300: var(--color-blay-300, #1d252f);
@@ -14,7 +14,7 @@ $color_grass: var(--color-grass, #459f46);
 $color_carrot: var(--color-carrot, #e98a38);
 $color_sunflower: var(--color-sunflower, #e9e938);
 
-/* Font */
+/* font */
 $font_family: var(--font-family, "Poppins");
 
 $font_weight_light: var(--font-weight-light, 300);
@@ -34,10 +34,16 @@ $font_size_small: var(--font-size-small, 0.8rem);
 $line_height: var(--line-height, 1.5);
 $line_height_heading: var(--line-height-heading, 1.2);
 
-/* Breakpoints */
+/* breakpoints */
 $breakpoint_mobile: 320px;
 $breakpoint_tablet: 768px;
 $breakpoint_desktop: 1080px;
 
-/* Paths */
+/* border radius */
+$border_radius: var(--border-radius, 5px);
+$border_radius_sm: var(--border-radius-sm, 10px);
+$border_radius_md: var(--border-radius-md, 20px);
+$border_radius_lg: var(--border-radius-lg, 30px);
+
+/* paths */
 $path_fonts: "../fonts";
