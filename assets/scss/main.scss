@@ -9,9 +9,12 @@
 @import "base/typography";
 @import "base/animations";
 /* Components */
+@import "components/gamecard";
 /* Layout */
 @import "layout/header";
 @import "layout/nav";
 @import "layout/sidebar";
 @import "layout/userinfo";
+@import "layout/loader";
+@import "layout/games";
 /* Vendor */

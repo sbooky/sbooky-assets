@@ -18,25 +18,22 @@ body {
 	font-family: $font_family;
 	color: $color_frost_200;
 	min-height: 100%;
+	//! refactor
 	&.app {
 		display: grid;
-		grid-template-areas:
-			"sidebar header"
-			"sidebar main";
 		grid-template-columns: auto 1fr auto;
 		grid-template-rows: auto 1fr;
 		height: 100vh;
+		gap: 20px;
+		padding: 20px;
 		.header {
-			grid-area: header;
-			padding: 20px;
-			padding-left: 0;
+			grid-area: 1/2/2/4;
 		}
 		.sidebar {
-			grid-area: sidebar;
-			padding: 20px;
+			grid-area: 1/1/3/2;
 		}
 		.main {
-			grid-area: main;
+			grid-area: 2/2/3/4;
 			max-height: 100%;
 			overflow-y: auto;
 		}
@@ -82,4 +79,12 @@ input {
 img {
 	display: block;
 	max-width: 100%;
+}
+
+/* main */
+.main {
+	display: grid;
+	&__inner {
+		height: 100%;
+	}
 }

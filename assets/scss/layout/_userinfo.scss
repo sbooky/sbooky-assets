@@ -6,6 +6,7 @@
 	display: flex;
 	gap: 10px;
 	margin-left: auto;
+	align-items: center;
 	&__avatar {
 		img {
 			object-fit: cover;
@@ -14,6 +15,15 @@
 			border-radius: $border_radius_sm;
 		}
 	}
+	&__details {
+		padding: 0 10px;
+	}
 	&__name {
+		font-weight: $font_weight_semibold;
+		color: $color_frost_300;
+	}
+	&__role {
+		font-size: $font_size_small;
+		line-height: 1;
 	}
 }

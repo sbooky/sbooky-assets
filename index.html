@@ -5,17 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
 		<link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
-		<link rel="icon" href="./assets/img/favicon.svg" type="image/x-icon" />
+		<link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon" />
 		<title>Document</title>
 	</head>
 	<body class="app">
+		<div class="loader"></div>
 		<!-- header -->
 		<header class="header">
 			<div class="header__inner">
+				<div class="header__title">
+					<h5>Games</h5>
+				</div>
 				<div class="userinfo">
-					<div class="userinfo__name">John Doe</div>
+					<div class="userinfo__details">
+						<p class="userinfo__name">John Doe</p>
+						<p class="userinfo__role">Admin</p>
+					</div>
 					<div class="userinfo__avatar">
-						<img src="./assets/img/avatar.jpg" alt="avatar" />
+						<img src="./assets/images/avatar.jpg" alt="avatar" />
 					</div>
 				</div>
 			</div>
@@ -24,7 +31,7 @@
 		<aside class="sidebar">
 			<div class="sidebar__inner">
 				<a class="sidebar__logo" href="/">
-					<img src="./assets/img/boo.svg" alt="boo" />
+					<img src="./assets/images/boo-animated.svg" alt="boo" />
 				</a>
 				<nav class="nav">
 					<ul class="nav__list">
@@ -44,9 +51,9 @@
 							</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link"
-								><i class="fa-solid fa-power-off"></i
-							></a>
+							<a href="#" class="nav__link">
+								<i class="fa-solid fa-power-off"></i>
+							</a>
 						</li>
 					</ul>
 				</nav>
@@ -55,15 +62,48 @@
 		<!-- main -->
 		<main class="main">
 			<div class="main__inner">
-				<h1>Lorem</h1>
-				<h1>Lorem</h1>
-				<h1>Lorem</h1>
-				<h1>Lorem</h1>
-				<h1>Lorem</h1>
-				<h1>Lorem</h1>
-				<h1>Lorem</h1>
-				<h1>Lorem</h1>
-				<h1>Lorem</h1>
+				<div class="games">
+					<div class="gamecard">
+						<div class="gamecard__image">
+							<img src="./assets/images/thumbnail.jpg" alt="gamename" />
+						</div>
+						<a href="#" class="gamecard__link">
+							<i class="fa-solid fa-play-circle"></i>
+						</a>
+					</div>
+					<div class="gamecard">
+						<div class="gamecard__image">
+							<img src="./assets/images/thumbnail.jpg" alt="gamename" />
+						</div>
+						<a href="#" class="gamecard__link">
+							<i class="fa-solid fa-play-circle"></i>
+						</a>
+					</div>
+					<div class="gamecard">
+						<div class="gamecard__image">
+							<img src="./assets/images/thumbnail.jpg" alt="gamename" />
+						</div>
+						<a href="#" class="gamecard__link">
+							<i class="fa-solid fa-play-circle"></i>
+						</a>
+					</div>
+					<div class="gamecard">
+						<div class="gamecard__image">
+							<img src="./assets/images/thumbnail.jpg" alt="gamename" />
+						</div>
+						<a href="#" class="gamecard__link">
+							<i class="fa-solid fa-play-circle"></i>
+						</a>
+					</div>
+					<div class="gamecard">
+						<div class="gamecard__image">
+							<img src="./assets/images/thumbnail.jpg" alt="gamename" />
+						</div>
+						<a href="#" class="gamecard__link">
+							<i class="fa-solid fa-play-circle"></i>
+						</a>
+					</div>
+				</div>
 			</div>
 		</main>
 	</body>

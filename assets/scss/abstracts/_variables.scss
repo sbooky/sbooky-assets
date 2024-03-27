@@ -23,6 +23,7 @@ $font_weight_medium: var(--font-weight-medium, 500);
 $font_weight_semibold: var(--font-weight-semibold, 600);
 $font_weight_bold: var(--font-weight-bold, 700);
 
+$font_size: var(--font-size, 16px);
 $font_size_h1: var(--font-size-h1, range(48.83, 61.04));
 $font_size_h2: var(--font-size-h2, range(39.06, 48.83));
 $font_size_h3: var(--font-size-h3, range(31.25, 39.06));
@@ -46,7 +47,8 @@ $border_radius_md: var(--border-radius-md, 20px);
 $border_radius_lg: var(--border-radius-lg, 30px);
 
 /* paths */
-$path_fonts: "../fonts";
+$path_fonts: "../fonts/";
+$path_images: "../images/";
 
 /* transitions */
 $transition: var(--transition, 0.3s ease);

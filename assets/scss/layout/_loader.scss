@@ -1,0 +1,24 @@
+.loader {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	background: $color_blay_100;
+	pointer-events: none;
+	display: grid;
+	place-content: center;
+	animation: loader-fade-out 0.5s 1s forwards;
+	&::before {
+		content: "";
+		display: block;
+		width: 200px;
+		height: 100px;
+		background: url($path_images + "logo-animated.svg") no-repeat center /
+			contain;
+	}
+}
+
+@keyframes loader-fade-out {
+	to {
+		opacity: 0;
+	}
+}
