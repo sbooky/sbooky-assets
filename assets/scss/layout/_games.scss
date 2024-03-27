@@ -1,8 +1,5 @@
 .games {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.testgame1 {
-	border: 1px solid red;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 20px;
 }

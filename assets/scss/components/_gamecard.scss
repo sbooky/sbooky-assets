@@ -1,10 +1,9 @@
 .gamecard {
-	width: 100%;
-	max-width: 150px;
+	// width: 100%;
+	// max-width: 150px;
+	border-radius: $border_radius_md;
 	aspect-ratio: 3/4;
 	overflow: hidden;
-	border-radius: $border_radius_md;
-
 	position: relative;
 	&:hover {
 	}
@@ -18,9 +17,9 @@
 		}
 	}
 	&__link {
-		position: absolute;
-		inset: 0;
-		z-index: 1;
 		background: rgba(#000, 0.3);
+		position: absolute;
+		z-index: 1;
+		inset: 0;
 	}
 }

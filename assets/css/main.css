@@ -241,11 +241,9 @@ a {
 
 /* Components */
 .gamecard {
-  width: 100%;
-  max-width: 150px;
+  border-radius: var(--border-radius-md, 20px);
   aspect-ratio: 3/4;
   overflow: hidden;
-  border-radius: var(--border-radius-md, 20px);
   position: relative;
 }
 .gamecard__image {
@@ -259,10 +257,10 @@ a {
      object-fit: cover;
 }
 .gamecard__link {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
   background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 1;
+  inset: 0;
 }
 
 /* Layout */
@@ -366,11 +364,8 @@ a {
 }
 .games {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.testgame1 {
-  border: 1px solid red;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
 }
 
 /* Vendor *//*# sourceMappingURL=main.css.map */
