@@ -1,0 +1,34 @@
+.nav {
+	&__list {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__item {
+		&:hover:not(.nav__item--active) {
+			> .nav__link {
+				background: $color_blay_400;
+			}
+		}
+		&--active {
+			> .nav__link {
+				background: $color_bloo;
+				color: $color_frost_300;
+			}
+		}
+		&--bottom {
+			margin-top: auto;
+		}
+	}
+	&__link {
+		width: 50px;
+		height: 50px;
+		display: grid;
+		place-content: center;
+		border-radius: $border_radius_sm;
+		background: $color_blay_300;
+		color: $color_frost_200;
+		transition: $transition;
+	}
+}

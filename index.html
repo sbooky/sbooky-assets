@@ -4,30 +4,49 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
-		<link rel="icon" href="./assets/favicon.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+		<link rel="icon" href="./assets/img/favicon.svg" type="image/x-icon" />
 		<title>Document</title>
 	</head>
 	<body class="app">
 		<!-- header -->
 		<header class="header">
-			<div class="header__inner">H</div>
+			<div class="header__inner">
+				<div class="userinfo">
+					<div class="userinfo__name">John Doe</div>
+					<div class="userinfo__avatar">
+						<img src="./assets/img/avatar.jpg" alt="avatar" />
+					</div>
+				</div>
+			</div>
 		</header>
 		<!-- sidebar -->
 		<aside class="sidebar">
 			<div class="sidebar__inner">
+				<a class="sidebar__logo" href="/">
+					<img src="./assets/img/boo.svg" alt="boo" />
+				</a>
 				<nav class="nav">
 					<ul class="nav__list">
-						<li class="nav__item">
-							<a href="#" class="nav__link"> XX </a>
+						<li class="nav__item nav__item--active" data-tooltip="Games">
+							<a href="#" class="nav__link">
+								<i class="fa-solid fa-gamepad"></i>
+							</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link"> XX </a>
+							<a href="#" class="nav__link" data-tooltip="Friends">
+								<i class="fa-solid fa-user-group"></i>
+							</a>
+						</li>
+						<li class="nav__item nav__item--bottom">
+							<a href="#" class="nav__link">
+								<i class="fa-solid fa-cog"></i>
+							</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link"> XX </a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link"> XX </a>
+							<a href="#" class="nav__link"
+								><i class="fa-solid fa-power-off"></i
+							></a>
 						</li>
 					</ul>
 				</nav>

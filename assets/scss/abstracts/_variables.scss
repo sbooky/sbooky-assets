@@ -47,3 +47,6 @@ $border_radius_lg: var(--border-radius-lg, 30px);
 
 /* paths */
 $path_fonts: "../fonts";
+
+/* transitions */
+$transition: var(--transition, 0.3s ease);

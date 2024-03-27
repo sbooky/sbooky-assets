@@ -10,6 +10,7 @@
 
 html {
 	height: 100%;
+	overflow-y: hidden;
 }
 
 body {
@@ -19,22 +20,23 @@ body {
 	min-height: 100%;
 	&.app {
 		display: grid;
+		grid-template-areas:
+			"sidebar header"
+			"sidebar main";
 		grid-template-columns: auto 1fr auto;
 		grid-template-rows: auto 1fr;
 		height: 100vh;
 		.header {
-			grid-area: 1 / 2 / 2 / 4;
-			background: red;
-			padding: 10px;
+			grid-area: header;
+			padding: 20px;
 			padding-left: 0;
 		}
 		.sidebar {
-			grid-area: 1 / 1 / 3 / 2;
-			padding: 10px;
+			grid-area: sidebar;
+			padding: 20px;
 		}
 		.main {
-			grid-area: 2 / 2 / 3 / 4;
-			background: blue;
+			grid-area: main;
 			max-height: 100%;
 			overflow-y: auto;
 		}
@@ -43,12 +45,26 @@ body {
 	}
 }
 
+/* browser styles */
 ::selection {
 	background: $color_bloo;
 	color: $color_frost_300;
 }
 
-/* Form & Inputs */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $color_bloo;
+	border-radius: 10px;
+}
+
+/* form & inputs */
 
 input {
 	&[type="text"],
@@ -60,4 +76,10 @@ input {
 	&:focus {
 		outline: none;
 	}
+}
+
+/* images */
+img {
+	display: block;
+	max-width: 100%;
 }
