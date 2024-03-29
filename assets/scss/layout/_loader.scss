@@ -7,6 +7,9 @@
 	display: grid;
 	place-content: center;
 	animation: loader-fade-out 0.5s 1s forwards;
+	//!temp
+	display: none;
+	//!temp
 	&::before {
 		content: "";
 		display: block;

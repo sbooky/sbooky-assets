@@ -30,5 +30,8 @@
 		background: $color_blay_300;
 		color: $color_frost_200;
 		transition: $transition;
+		i {
+			pointer-events: none;
+		}
 	}
 }

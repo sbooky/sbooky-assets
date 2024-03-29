@@ -1,15 +1,20 @@
 .gamecard {
-	// width: 100%;
-	// max-width: 150px;
-	border-radius: $border_radius_md;
-	aspect-ratio: 3/4;
-	overflow: hidden;
 	position: relative;
-	&:hover {
+	overflow: hidden;
+	border-radius: $border_radius_md;
+	transition: $transition;
+	background: $color_blay_200;
+	aspect-ratio: 3/4;
+	&:has(.gamecard__image):hover {
+		transform: translateY(-5px);
+		.gamecard__link {
+			opacity: 1;
+			background: rgba(#000, 0.3);
+		}
 	}
 	&__image {
-		height: 100%;
 		width: 100%;
+		height: 100%;
 		img {
 			width: 100%;
 			height: 100%;
@@ -17,9 +22,18 @@
 		}
 	}
 	&__link {
-		background: rgba(#000, 0.3);
 		position: absolute;
-		z-index: 1;
 		inset: 0;
+		display: grid;
+		place-content: center;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		transition: $transition;
+		i {
+			color: $color_frost_300;
+			font-size: 40px;
+			pointer-events: none;
+		}
 	}
 }

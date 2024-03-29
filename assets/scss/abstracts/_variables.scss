@@ -16,6 +16,11 @@ $color_sunflower: var(--color-sunflower, #e9e938);
 
 /* font */
 $font_family: var(--font-family, "Poppins");
+$font_family_icons: var(--font-family-icons, "Font Awesome 6 Free");
+$font_family_icons_brands: var(
+	--font-family-icons-brands,
+	"Font Awesome 6 Brands"
+);
 
 $font_weight_light: var(--font-weight-light, 300);
 $font_weight_regular: var(--font-weight-regular, 400);
@@ -52,3 +57,19 @@ $path_images: "../images/";
 
 /* transitions */
 $transition: var(--transition, 0.3s ease);
+
+/* shadows */
+$shadow: var(--shadow, 0 0 10px rgba(var(--color-blay-100) 0.1));
+
+/* widths */
+$width_content: var(--width-content, 1440px);
+
+/* cursors */
+$cursor: url($path_images + "cursor/cursor-default.svg") 10 5, auto;
+$cursor_pointer: url($path_images + "cursor/cursor-pointer.svg") 10 5, auto;
+
+$cursor-text: var(url($path_images + "cursor/cursor-text.svg") 10 5, auto);
+$cursor-blocked: var(
+	url($path_images + "cursor/cursor-blocked.svg") 10 5,
+	auto
+);

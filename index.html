@@ -6,10 +6,21 @@
 		<link rel="stylesheet" href="./assets/css/main.css" />
 		<link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
 		<link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon" />
+		<script src="./assets/js/main.js" type="module" defer></script>
 		<title>Document</title>
 	</head>
 	<body class="app">
 		<div class="loader"></div>
+		<!-- modal -->
+		<div class="modal">
+			<div class="modal__inner">
+				<form class="form">
+					<input type="text" />
+					<input type="text" />
+					<button>Login</button>
+				</form>
+			</div>
+		</div>
 		<!-- header -->
 		<header class="header">
 			<div class="header__inner">
@@ -28,36 +39,35 @@
 			</div>
 		</header>
 		<!-- sidebar -->
+
 		<aside class="sidebar">
-			<div class="sidebar__inner">
-				<a class="sidebar__logo" href="/">
-					<img src="./assets/images/boo-animated.svg" alt="boo" />
-				</a>
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item nav__item--active" data-tooltip="Games">
-							<a href="#" class="nav__link">
-								<i class="fa-solid fa-gamepad"></i>
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link" data-tooltip="Friends">
-								<i class="fa-solid fa-user-group"></i>
-							</a>
-						</li>
-						<li class="nav__item nav__item--bottom">
-							<a href="#" class="nav__link">
-								<i class="fa-solid fa-cog"></i>
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link">
-								<i class="fa-solid fa-power-off"></i>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+			<a class="sidebar__logo" href="/">
+				<img src="./assets/images/boo-animated.svg" alt="boo" />
+			</a>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item nav__item--active" data-tooltip="Games">
+						<a href="#" class="nav__link">
+							<i class="fa-solid fa-gamepad"></i>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link" data-tooltip="Friends">
+							<i class="fa-solid fa-user-group"></i>
+						</a>
+					</li>
+					<li class="nav__item nav__item--bottom">
+						<a href="#" class="nav__link">
+							<i class="fa-solid fa-cog"></i>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							<i class="fa-solid fa-power-off"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</aside>
 		<!-- main -->
 		<main class="main">
@@ -65,12 +75,30 @@
 				<div class="games">
 					<div class="gamecard">
 						<div class="gamecard__image">
-							<img src="./assets/images/thumbnail.jpg" alt="gamename" />
+							<img src="./assets/images/thumbnail-4.jpg" alt="thumbnail" />
 						</div>
 						<a href="#" class="gamecard__link">
 							<i class="fa-solid fa-play"></i>
 						</a>
 					</div>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
+					<a class="gamecard"></a>
 				</div>
 			</div>
 		</main>
